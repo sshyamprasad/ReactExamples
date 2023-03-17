@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 import MoviesList from "./components/MoviesList";
 import "./App.css";
+import CheapCost from "./CheapCost";
+import LoginForm from "./LoginForm";
+import Solution from "./Solution";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -36,6 +39,9 @@ function App() {
         {isLoading&&<p>Loading...</p>}
         {<MoviesList movies={movies} />}
         {errorText&&<p>{errorText}</p>}
+        <CheapCost />
+        <LoginForm />
+        <Solution />
       </section>
     </React.Fragment>
   );
