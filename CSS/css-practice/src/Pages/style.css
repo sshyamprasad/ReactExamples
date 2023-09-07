@@ -1,0 +1,42 @@
+* {
+    color: blueviolet;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+  }
+  ul {
+    line-style: none;
+    border: solid 1px #ccc;
+  }
+
+  #container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .box {
+    padding: 10px;
+    margin: 10px;
+    width: 240px;
+  }
+  #container .box {
+	float: none;
+	padding-bottom: 15px;
+} 
+
+input [type="text"] {
+	background-color: blue;
+	width: 200px;
+}
+
+a:hover {
+	color: brown;
+}
+input {
+    background-color: white;
+    width: 1.5rem;
+}
+
+
+

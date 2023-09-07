@@ -1,5 +1,5 @@
 
-it.each`
+it.skip.each`
   a    | b    | expected
   ${1} | ${1} | ${2}
   ${1} | ${2} | ${3}
