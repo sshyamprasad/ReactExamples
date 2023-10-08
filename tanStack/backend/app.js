@@ -88,7 +88,7 @@ app.post('/events', async (req, res) => {
     !event.description?.trim() ||
     !event.date?.trim() ||
     !event.time?.trim() ||
-    !event.image?.trim() ||
+    // !event.image?.trim() ||
     !event.location?.trim()
   ) {
     return res.status(400).json({ message: 'Invalid data provided.' });
@@ -100,6 +100,7 @@ app.post('/events', async (req, res) => {
   const newEvent = {
     id: Math.round(Math.random() * 10000).toString(),
     ...event,
+    image:""
   };
 
   events.push(newEvent);
